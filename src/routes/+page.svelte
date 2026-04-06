@@ -1,15 +1,15 @@
 <script lang="ts">
-	let count: number = $state(0);
-
-	function increment(): void {
-		count++;
-	}
+	let { data } = $props();
 </script>
 
 <main>
-	<h1>SvelteKit + Bun + SCSS</h1>
-	<p>카운트: <strong>{count}</strong></p>
-	<button onclick={increment}>+1</button>
+	<h1>BusMaker</h1>
+	<h2>SQLite 데이터</h2>
+	<ul>
+		{#each data.items as item}
+			<li><strong>{item.name}</strong> — {item.description}</li>
+		{/each}
+	</ul>
 </main>
 
 <style lang="scss">
@@ -24,19 +24,15 @@
 			-webkit-text-fill-color: transparent;
 		}
 
-		button {
-			margin-top: 1rem;
-			padding: 0.75rem 2rem;
-			font-size: 1.2rem;
-			border: none;
-			border-radius: 8px;
-			background: #ff6b6b;
-			color: white;
-			cursor: pointer;
-			transition: transform 0.15s;
+		ul {
+			list-style: none;
+			padding: 0;
 
-			&:hover {
-				transform: scale(1.05);
+			li {
+				padding: 0.5rem;
+				margin: 0.25rem 0;
+				background: #1a1a1a;
+				border-radius: 8px;
 			}
 		}
 	}
