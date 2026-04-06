@@ -1,6 +1,9 @@
 import Database from 'better-sqlite3';
-import { join } from 'path';
+import { join, dirname } from 'path';
+import { fileURLToPath } from 'url';
 
-const db = new Database(join(process.cwd(), 'static', 'data.db'), { readonly: true });
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const dbPath = join(__dirname, '..', '..', '..', 'data', 'data.db');
+const db = new Database(dbPath, { readonly: true });
 
 export default db;
