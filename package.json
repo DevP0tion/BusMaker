@@ -7,7 +7,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "prebuild": "npm run merge:all",
-    "merge:gifts": "npx tsx scripts/merge-gifts.ts",
+    "merge:gifts": "tsx scripts/merge-gifts.ts",
     "merge:all": "npm run merge:gifts"
   },
   "type": "module",
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^3.0.10",
+    "tsx": "^4.21.0",
     "typescript": "^6.0.2"
   }
 }
