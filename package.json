@@ -6,8 +6,9 @@
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
-    "prebuild": "npx tsx scripts/merge-gifts.ts",
-    "merge:gifts": "npx tsx scripts/merge-gifts.ts"
+    "prebuild": "npm run merge:all",
+    "merge:gifts": "npx tsx scripts/merge-gifts.ts",
+    "merge:all": "npm run merge:gifts"
   },
   "type": "module",
   "dependencies": {
