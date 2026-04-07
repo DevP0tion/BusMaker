@@ -9,3 +9,6 @@ build
 .DS_Store
 Thumbs.db
 
+-e 
+# 자동 생성 (빌드 시 통합)
+static/data/ego-gifts.json
