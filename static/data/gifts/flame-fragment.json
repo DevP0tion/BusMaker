@@ -3,7 +3,5 @@
   "tier": 3,
   "keyword": "화상",
   "description": "적이 화상 피해로 처치되면, 다음 턴 화상 부여 스킬을 가진 인격의 피해량 증가",
-  "upgradable": 2,
-  "recipe": [],
-  "themePack": ""
+  "upgradable": 2
 }

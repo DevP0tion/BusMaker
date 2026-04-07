@@ -3,7 +3,5 @@
   "tier": 2,
   "keyword": "화상",
   "description": "턴 시작 시 화상이 있는 적의 공격 레벨 4 감소",
-  "upgradable": 0,
-  "recipe": [],
-  "themePack": ""
+  "upgradable": 0
 }
