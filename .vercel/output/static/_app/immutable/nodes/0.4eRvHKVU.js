@@ -1,1 +1,0 @@
-import{C as e,P as t,f as n,m as r,s as i}from"../chunks/C5T0axp_.js";import"../chunks/DEDqjojZ.js";var a=r(`<div class="app svelte-12qhfyh"><!></div>`);function o(r,o){var s=a();i(e(s),()=>o.children),t(s),n(r,s)}export{o as component};
