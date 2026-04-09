@@ -5,6 +5,11 @@
 		<div class="tool-card-desc">수감자별 인격과 E.G.O를 선택하여 편성을 구성하고 저장할 수 있습니다.</div>
 		<span class="tool-card-tag tag-ready">사용 가능</span>
 	</div>
+	<a class="tool-card" href="gifts">
+		<div class="tool-card-title">기프트 위키</div>
+		<div class="tool-card-desc">E.G.O 기프트 408종의 등급, 키워드별 정보를 검색하고 확인합니다.</div>
+		<span class="tool-card-tag tag-ready">사용 가능</span>
+	</a>
 	<div class="tool-card disabled">
 		<div class="tool-card-title">거울 던전 빌더</div>
 		<div class="tool-card-desc">거울 던전 공략용 층별 편성과 E.G.O 선택을 계획합니다.</div>
@@ -40,6 +45,9 @@
 		padding: 24px;
 		cursor: pointer;
 		transition: all 0.2s;
+		text-decoration: none;
+		color: inherit;
+		display: block;
 	}
 
 	.tool-card:hover {
